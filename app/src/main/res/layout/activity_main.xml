@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.example.firma.Lienzo
+        android:id="@+id/viewfirma"
+        android:layout_width="match_parent"
+        android:layout_height="383dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtdescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Ingrese una descripcion"
+            android:inputType="textMultiLine" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btngaleria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
+        app:cornerRadius="20dp"
+        android:text="Galeria" />
+
+    <Button
+        android:id="@+id/btnguardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/teal_200"
+        android:backgroundTint="@color/design_default_color_secondary"
+        app:cornerRadius="20dp"
+        android:text="Guardar" />
+
+
+</LinearLayout>
